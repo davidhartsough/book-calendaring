@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Book Calendaring Calculator</title>
+    <link rel="stylesheet" href="./index.css" />
+    <meta
+      name="description"
+      content="Calculate how long it will take you to read a book at your daily pace."
+    />
+    <meta
+      name="keywords"
+      content="book, reading, calendar, days, pages, calculate, calculator, schedule"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Book Calendaring" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Book Calendaring" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#673ab7" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="theme-color" content="#673ab7" />
+    <meta property="og:title" content="Book Calendaring Calculator" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bookcalendaring.com" />
+    <meta
+      property="og:image"
+      content="https://bookcalendaring.com/logo192.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Book Calendaring logo" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:description"
+      content="Calculate how long it will take you to read a book at your daily pace."
+    />
+    <meta property="og:site_name" content="Book Calendaring" />
+    <meta name="twitter:card" content="summary" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Book Calendaring",
+        "url": "https://bookcalendaring.com",
+        "headline": "Book Calendaring Calculator",
+        "keywords": "book, reading, calendar, days, pages, calculate, calculator, schedule",
+        "description": "Calculate how long it will take you to read a book at your daily pace.",
+        "image": "https://bookcalendaring.com/logo.png"
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Book Calendaring Calculator</h1>
+      </header>
+      <section>
+        <form id="form">
+          <label>
+            How many pages are left for you to read in your book?
+            <input
+              type="number"
+              id="total-pages"
+              value="100"
+              placeholder="100"
+              min="1"
+              max="9000"
+              step="1"
+              autofocus
+              required
+            />
+          </label>
+          <label>
+            How many pages will you read each day?
+            <input
+              type="number"
+              id="daily-pages"
+              value="10"
+              placeholder="10"
+              min="1"
+              max="9000"
+              step="1"
+              required
+            />
+          </label>
+          <button id="submit" type="submit">Calculate</button>
+        </form>
+        <p id="output"></p>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
